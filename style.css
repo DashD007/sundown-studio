@@ -15,14 +15,17 @@
     padding: 0;
     box-sizing:border-box;
     font-family: 'neue';
+    user-select: none;
     /* word-spacing: 2px; */
 }
 
 html,body{
     height:100%;
     width:100%;
+    
     /* background-color: #EFEAE3; */
 }
+
 #page1{
     min-height: 100vh;
     width:100%;
@@ -165,11 +168,12 @@ nav{
 
 
 #page2{
-    height: 100vh;
+    min-height: 100vh;
     width:100%;
     /* background-color: red; */
     position: relative;
     background-color: #EFEAE3;
+    padding-bottom: 5vw;
 }
 #moving-text{
     white-space: nowrap;
@@ -220,11 +224,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 #page2-bottom h2{
     font-size:4vw;
     width:60%;
     /* display: inline; */
+    z-index: 3;
 }
 
 #page2-bottom-part2{
@@ -254,7 +260,7 @@ nav{
     left:18%;
     top:78%;
     filter: blur(20px);
-    z-index: -1;
+    z-index:2 ;
     animation-name: gooey;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -292,7 +298,7 @@ nav{
 }
 .elem h3{
     font-size:3vw;
-    z-index: 2;
+    z-index: 4;
 }
 .elem #overlay{
     height: 100%;
